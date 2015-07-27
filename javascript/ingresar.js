@@ -10,21 +10,6 @@ function actualizar_host(){
 	
 $(document).ready(function() {
 	
-	function close(){
-	navigator.app.exitApp();
-	
-	}
-	function silenciar()
-	{
-		stopAudio();
-		/*$('#snd_irfoco1')[0].muted=true;
-		$('#snd_irfoco2')[0].muted=true;
-		$('#b1')[0].muted=true;
-		$('#b2')[0].muted=true;
-		$('#c1')[0].muted=true;
-		$('#c2')[0].muted=true;*/
-	};
-
 	function eliminar() {
 						
 	document.getElementById('txt_direccion1').value="";
@@ -40,57 +25,6 @@ $(document).ready(function() {
 		window.alert("Usted borro la direccion de host!");
 						
 	});
-						
-	
-  /* $('#botoniraf1').mousemove(
-		function(){	
-			
-			playAudio('snd_irfoco1');
-		});
-	
-	$('#botoniraf1').click(
-		function(){	
-			
-			playAudio('snd_irfoco1');
-		}
-	);
-	
-	
-		
-       $('#botoniraf2').mousemove(function()
-		{	
-		
-		playAudio('snd_irfoco2');
-			
-		});*/
-		
-	$('#Ef1').mousemove(function()
-		{
-			silenciar();
-				$('#b1')[0].muted=false;
-				$('#b1')[0].play();
-		});
-		
-	$('#Ef2').mousemove(function()
-		{
-			silenciar();
-				$('#b2')[0].muted=false;
-				$('#b2')[0].play();
-		});
-		 
-	$('#Af1').mousemove(function()
-		{
-			silenciar();
-				$('#c1')[0].muted=false;
-				$('#c1')[0].play();
-		});
-		
-	$('#Af2').mousemove(function()
-		{
-			silenciar();
-				$('#c2')[0].muted=false;
-				$('#c2')[0].play();
-		});
 
 		 //if(Conf.host==null)
 			 
