@@ -74,8 +74,9 @@ $(document).ready(function() {
    $('#botoniraf1').mousemove(function()
 		{	
 			//silenciar();
+			alert("La ruta:" + snd_irfoco1);
 			playAudio('snd_irfoco1');
-			window.alert("La ruta:" + snd_irfoco1);
+			
 			//silenciar();
 			//$('#snd_irfoco1')[0].muted=false;
 			//$('#snd_irfoco1')[0].play();
