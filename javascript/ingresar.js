@@ -71,18 +71,20 @@ $(document).ready(function() {
 	});
 						
 	
-   $('#botoniraf1').mousemove(function()
-		{	
-			//silenciar();
-			alert("La ruta:" + snd_irfoco1);
+   $('#botoniraf1').mousemove(
+		function(){	
+			
 			playAudio('snd_irfoco1');
-			
-			//silenciar();
-			//$('#snd_irfoco1')[0].muted=false;
-			//$('#snd_irfoco1')[0].play();
-			
-		
 		});
+	
+	$('#botoniraf1').click(
+		function(){	
+			
+			playAudio('snd_irfoco1');
+		}
+	);
+	
+	
 		
        $('#botoniraf2').mousemove(function()
 		{	
