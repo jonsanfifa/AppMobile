@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<widget xmlns 	="http://www.w3.org/ns/widgets"
+	xmlns:gap	="http://phonegap.com/ns/1.0"
+	versionCode	="com.phonegap.example"
+	version		="1.0.0">
+
+	<name>APP MOBILE 1.0</name>
+
+	<description>
+		Enciende y apaga Focos a traves de una red de datos.
+	</description>
+	
+	<author href= "antonio8918hotmail.com" >
+	</author>
+	<gap:platform name="ios" />
+	<gap:platform name="android" />
+	<gap:platform name="winphone" />	
+	<gap:plugin name="org.apache.cordova.media" />
+	
+</widget>
