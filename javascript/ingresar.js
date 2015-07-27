@@ -15,8 +15,9 @@ function playAudio(id) {
 		//var url = audioElement.getAttribute('src');
 		var url = id;
 		console.log("La url es: " + url);
-		var my_media = new Media(url, onSuccess, onError);
 		console.log(my_media);
+		var my_media = new Media(url, onSuccess, onError);
+		
 		// Play audio
 		my_media.play();
 }
