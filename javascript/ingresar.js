@@ -7,36 +7,6 @@ function actualizar_host(){
 		localStorage.setItem('host', direccion);
 		
 };
-
-var my_media = null;
-
-	function playAudio(id) {
-		//var audioElement = document.getElementById(id);
-		//var url = audioElement.getAttribute('src');
-		var url = "file:///android_asset/www/" + id;
-		console.log("La url es: " + url);
-		my_media = new Media(url, ondSuccess, onError);
-		
-		// Play audio
-		my_media.play();
-	}
-	
-	function stopAudio() {
-            if (my_media) {
-                my_media.stop();
-            }
-        }
-
-		// onSuccess Callback
-        function onSuccess() {
-            console.log("playAudio():Audio Success");
-        }
-        // onError Callback
-        function onError(error) {
-            alert('code: '    + error.code    + '\n' +
-                  'message: ' + error.message + '\n');
-        }
-
 	
 $(document).ready(function() {
 	
