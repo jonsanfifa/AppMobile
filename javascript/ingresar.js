@@ -75,6 +75,7 @@ $(document).ready(function() {
 		{	
 			//silenciar();
 			playAudio('snd_irfoco1');
+			window.alert("La ruta:" + snd_irfoco1);
 			//silenciar();
 			//$('#snd_irfoco1')[0].muted=false;
 			//$('#snd_irfoco1')[0].play();
@@ -84,7 +85,7 @@ $(document).ready(function() {
 		
        $('#botoniraf2').mousemove(function()
 		{	
-		slienciar();
+		
 		playAudio('snd_irfoco2');
 			
 		});
