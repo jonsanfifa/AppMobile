@@ -16,20 +16,17 @@ function playAudio(id) {
 		var url = id;
 		console.log("La url es: " + url);
 		console.log(my_media);
-		var my_media = new Media(url, onSuccess, onError);
+		my_media = new Media(url, onSuccess, onError);
 		
 		// Play audio
 		my_media.play();
 }
 
 		// onSuccess Callback
-        //
         function onSuccess() {
             console.log("playAudio():Audio Success");
         }
-
         // onError Callback
-        //
         function onError(error) {
             alert('code: '    + error.code    + '\n' +
                   'message: ' + error.message + '\n');
