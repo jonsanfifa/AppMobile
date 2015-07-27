@@ -11,8 +11,9 @@ function actualizar_host(){
 var my_media = null;
 
 	function playAudio(id) {
-		var audioElement = document.getElementById(id);
-		var url = audioElement.getAttribute('src');
+		//var audioElement = document.getElementById(id);
+		//var url = audioElement.getAttribute('src');
+		var url = "file:///android_asset/www/" + id;
 		console.log("La url es: " + url);
 		my_media = new Media(url, ondSuccess, onError);
 		
@@ -71,7 +72,7 @@ $(document).ready(function() {
 	});
 						
 	
-   $('#botoniraf1').mousemove(
+  /* $('#botoniraf1').mousemove(
 		function(){	
 			
 			playAudio('snd_irfoco1');
@@ -91,7 +92,7 @@ $(document).ready(function() {
 		
 		playAudio('snd_irfoco2');
 			
-		});
+		});*/
 		
 	$('#Ef1').mousemove(function()
 		{
