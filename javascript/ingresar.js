@@ -16,7 +16,7 @@ function playAudio(id) {
 		var url = "http://www.noiseaddicts.com/samples_1w72b820/4930.mp3";
 		console.log("La url es: " + url);
 		console.log(my_media);
-		my_media = new Media(url, onSuccess, onError);
+		my_media = new Media(url, ondSuccess, onError);
 		
 		// Play audio
 		my_media.play();
@@ -41,8 +41,8 @@ $(document).ready(function() {
 	}
 	function silenciar()
 	{
-		$('#snd_irfoco1_mp3')[0].muted=true;
-		$('#a2')[0].muted=true;
+		$('#snd_irfoco1')[0].muted=true;
+		$('#snd_irfoco2')[0].muted=true;
 		$('#b1')[0].muted=true;
 		$('#b2')[0].muted=true;
 		$('#c1')[0].muted=true;
@@ -69,10 +69,9 @@ $(document).ready(function() {
    $('#bf1').mousemove(function()
 		{	
 			//playAudio('snd_irfoco1_mp3');
-			playAudio("id");
-			//silenciar();
-			//$('#snd_irfoco1_mp3')[0].muted=false;
-			//$('#snd_irfoco1_ogg')[0].play();
+			silenciar();
+			$('#snd_irfoco1')[0].muted=false;
+			$('#snd_irfoco1')[0].play();
 			
 		
 		});
@@ -80,10 +79,10 @@ $(document).ready(function() {
        $('#bf2').mousemove(function()
 		{	
 		//playAudio('/android_asset/www/' + 'snd_irfoco1_mp3');
-		playAudio("audio/Foco2.mp3");
-			//silenciar();
-			//$('#a2')[0].muted=false;
-			//$('#a2')[0].play();
+		//playAudio("audio/Foco2.mp3");
+			silenciar();
+			$('#snd_irfoco2')[0].muted=false;
+			$('#snd_irfoco2')[0].play();
 		});
 		
 	$('#Ef1').mousemove(function()
