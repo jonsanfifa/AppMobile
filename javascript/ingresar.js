@@ -13,7 +13,7 @@ var my_media = null;
 function playAudio(id) {
 		//var audioElement = document.getElementById(id);
 		//var url = audioElement.getAttribute('src');
-		var url = id;
+		var url = "http://www.noiseaddicts.com/samples_1w72b820/4930.mp3";
 		console.log("La url es: " + url);
 		console.log(my_media);
 		my_media = new Media(url, onSuccess, onError);
@@ -66,10 +66,10 @@ $(document).ready(function() {
 	});
 						
 	
-    $('#bf1').mousemove(function()
+   $('#bf1').mousemove(function()
 		{	
 			//playAudio('snd_irfoco1_mp3');
-			playAudio("http://www.noiseaddicts.com/samples_1w72b820/4930.mp3");
+			playAudio("id");
 			//silenciar();
 			//$('#snd_irfoco1_mp3')[0].muted=false;
 			//$('#snd_irfoco1_ogg')[0].play();
